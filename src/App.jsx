@@ -9,6 +9,8 @@ import { useState, useEffect, useRef } from 'react'
 
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   const [open, setOpen] = useState(false)
   // const goToAbout = useRef()
   const goToSkills = useRef()
@@ -18,6 +20,11 @@ function App() {
   const closeOrOpen = () => {
     setOpen(!open)
   }
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
 
   const [language, setLanguage] = useState("english")
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -56,18 +63,16 @@ function App() {
   }
 
   return (
-    <div className='bg-gray-50'>
-      {/* <Router> */}
+    <div className={darkMode ? 'dark-mode' : ''}>
       <div className='px-6'>
-        <Nav language={language} onLanguageChange={handleLanguageChange} showHamburger={windowWidth < 960} open={open} closeOrOpen={closeOrOpen} /* onAboutClick={scrollToAbout} */ onSkillsClick={scrollToSkills} onProjectsClick={scrollToProjects} onRecoClick={scrollToReco} />
-        <Intro /* ref={goToAbout} */ language={language} />
-        <Skills ref={goToSkills} language={language} />
-        <Projects ref={goToProjects} language={language} />
-        <Recommandations ref={goToReco} language={language} />
+        <Nav language={language} onLanguageChange={handleLanguageChange} showHamburger={windowWidth < 960} open={open} closeOrOpen={closeOrOpen} /* onAboutClick={scrollToAbout} */ onSkillsClick={scrollToSkills} onProjectsClick={scrollToProjects} onRecoClick={scrollToReco} toggleDM={toggleDarkMode} dark={darkMode} />
+        <Intro /* ref={goToAbout} */ language={language} dark={darkMode} />
+        <Skills ref={goToSkills} language={language} dark={darkMode} />
+        <Projects ref={goToProjects} language={language} dark={darkMode} />
+        <Recommandations ref={goToReco} language={language} dark={darkMode} />
         <ButtonTop />
       </div>
       <Footer language={language} />
-      {/* </Router> */}
     </div>
   )
 }

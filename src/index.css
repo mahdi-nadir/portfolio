@@ -232,13 +232,13 @@
     font-size: 22px;
 }
 
-.box .text {
+/* .box .text {
     padding: 10px 0 0;
     color: #999;
     font-weight: 700;
     letter-spacing: 1px;
     font-size: 16pt;
-}
+} */
 
 .text {
     color: #999;
@@ -246,6 +246,16 @@
     letter-spacing: 1px;
     font-size: 16pt;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.textDark {
+    color: #ddd;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16pt;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .arrow {
@@ -277,6 +287,14 @@
 /* 
 ########################## NAV ############################
 */
+.logo {
+    transition: transform .1s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.08);
+}
+
 .littleMenu, .btn {
     animation: zoom .3s ease-in-out;
 }
@@ -436,6 +454,31 @@
     line-height: 32px;
 }
 
+.reco-card-inner .nameDark {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14pt;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reco-card-inner .jobDark {
+    color: #ccc;
+    font-weight: 700;
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.reco-card-inner .recommandationDark {
+    color: #eee;
+    font-size: 12pt;
+    font-style: italic;
+    text-align: center;
+    margin-top: 6px;
+    line-height: 32px;
+}
+
 .quotation_marks {
     font-size: 24px;
     font-weight: 700;
@@ -452,3 +495,10 @@
     /* padding: 5px; */
 }
 
+
+
+
+.dark-mode {
+    background-color: #2d3748;
+    color: #fff;
+  }

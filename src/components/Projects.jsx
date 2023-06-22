@@ -2,13 +2,14 @@ import ProjectCard from './ProjectCard'
 import React from 'react';
 
 
-export default React.forwardRef(function Projects({ language }, ref) {
+export default React.forwardRef(function Projects({ language, dark }, ref) {
     return (
         <div ref={ref}>
             <h1 className='flex justify-center text-3xl md:text-4xl font-bold uppercase my-10 text-align underline'>{language === "french" ? "Projets" : "Projects"}</h1>
 
             <div className='boxProject flex flex-col justify-center items-center md:flex-row md:flex-wrap gap-12 '>
                 <ProjectCard
+                    dark={dark}
                     language={language}
                     title="Vino Bueno"
                     linkVidAdmin="https://drive.google.com/file/d/1DyBmS9A9mYDfSwHztkTHhErduMU2TYfX/view?usp=sharing"
@@ -19,6 +20,7 @@ export default React.forwardRef(function Projects({ language }, ref) {
                 />
 
                 <ProjectCard
+                    dark={dark}
                     language={language}
                     title="Gofbee"
                     linkVidUser="https://www.gofbee.com/"
@@ -28,6 +30,7 @@ export default React.forwardRef(function Projects({ language }, ref) {
                 />
 
                 <ProjectCard
+                    dark={dark}
                     language={language}
                     title="Maple Mind"
                     soon={false}
