@@ -34,8 +34,6 @@ export default React.forwardRef(function Projects({ language }, ref) {
                     description={language === "french" ? "Ce projet est un blog sur l'immigration au Canada. Il s'agit d'une ressource complète et conviviale pour les personnes recherchant des informations sur la résidence permanente, les permis de travail, les permis d'études ou les visas touristiques. Avec un compte personnel, les utilisateurs peuvent poser des questions, mettre des articles en favoris, lire des articles informatifs rédigés par les administrateurs, participer à des messages privés et profiter de nombreuses autres fonctionnalités." : "This project is a blog on immigration to Canada. It is a comprehensive and user-friendly resource for individuals seeking information on permanent residency, work permits, study permits, or tourist visas. With a personal account, users can ask questions, bookmark posts, read informative articles written by the administrators, engage in private messaging, and many more features."}
                     technologies={["Tailwind", "JavaScript", "React", "Laravel", "MySQL"]}
                 />
-
-
             </div >
         </div>
     )

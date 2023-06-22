@@ -1,7 +1,5 @@
-function RecoComponent({ name, recommandation, picture, job, linkedInLink }) {
+export default function RecoComponent({ name, recommandation, picture, job, linkedInLink }) {
     return (
-        // make recommandation card
-
         <div className='reco-card shadow-lg rounded-xl'>
             <div className='reco-card-inner'>
                 <div className="border-b-2">
@@ -14,5 +12,3 @@ function RecoComponent({ name, recommandation, picture, job, linkedInLink }) {
         </div>
     )
 }
-
-export default RecoComponent

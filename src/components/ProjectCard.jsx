@@ -1,6 +1,6 @@
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 
-function ProjectCard({ language, title, linkVidAdmin, linkVidUser, description, technologies, soon }) {
+export default function ProjectCard({ language, title, linkVidAdmin, linkVidUser, description, technologies, soon }) {
     return (
         <div className='boxProjectContainer flex flex-col shadow-lg rounded py-4 sm:w-1/2' style={{ maxWidth: '400px', maxHeight: '600px' }}>
             <h2 className="text">{title}</h2>
@@ -34,5 +34,3 @@ function ProjectCard({ language, title, linkVidAdmin, linkVidUser, description, 
         </div >
     )
 }
-
-export default ProjectCard

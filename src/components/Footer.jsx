@@ -1,7 +1,8 @@
 
 import { GrReactjs } from 'react-icons/gr'
 import { SiTailwindcss } from 'react-icons/si'
-function Footer({ language }) {
+
+export default function Footer({ language }) {
     const GetYear = new Date()
     return (
         <div className='flex flex-col justify-center items-center h-24 mt-10 bg-black text-white'>
@@ -11,5 +12,3 @@ function Footer({ language }) {
         </div>
     )
 }
-
-export default Footer

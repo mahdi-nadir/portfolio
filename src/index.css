@@ -281,9 +281,13 @@
     animation: zoom .3s ease-in-out;
 }
 
+.btn:hover {
+    text-decoration: underline;
+}
+
 .imgFlag {
     width: 35px;
-    height: 20px;
+    height: 35px;
     transition: transform .1s ease-in-out;
 }
 
@@ -316,6 +320,11 @@
 
     #root {
         min-width: 100%;
+    }
+
+    .imgFlag {
+        width: 30px;
+        height: 30px;
     }
 }
 
