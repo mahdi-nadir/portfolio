@@ -4,14 +4,15 @@ import CSS from '../imgs/tech/css.png'
 import PHP from '../imgs/tech/php.png'
 import tailwind from '../imgs/tech/tailwind.png'
 import react from '../imgs/tech/react.png'
+import nextjs from '../imgs/tech/nextjs.png'
 import laravel from '../imgs/tech/laravel.png'
 import git from '../imgs/tech/git.png'
 import mysql from '../imgs/tech/mysql.png'
 import mongodb from '../imgs/tech/mongodb.png'
-import photoshop from '../imgs/tech/photoshop.png'
+/* import photoshop from '../imgs/tech/photoshop.png'
 import illustrator from '../imgs/tech/illustrator.png'
 import adobe_xd from '../imgs/tech/adobe_xd.png'
-import figma from '../imgs/tech/figma.png'
+import figma from '../imgs/tech/figma.png' */
 import SkillCard from './SkillCard'
 import React from 'react'
 
@@ -25,15 +26,16 @@ export default React.forwardRef(function Skills({ language }, ref) {
                 <SkillCard source={tailwind} alter="Tailwind" title="Tailwind" percentage={80} mainTitle="Tailwind" box="boxTailwind" percent="percentTailwind" />
                 <SkillCard source={JavaScript} alter="JavaScript" title="JavaScript" percentage={85} mainTitle="JavaScript" box="boxJS" percent="percentJS" />
                 <SkillCard source={react} alter="React" title="React" percentage={80} mainTitle="React" box="boxReact" percent="percentReact" />
+                <SkillCard source={nextjs} alter="Next.js" title="Next.js" percentage={80} mainTitle="Next.js" box="boxNext" percent="percentNext" />
                 <SkillCard source={PHP} alter="PHP" title="PHP" percentage={80} mainTitle="PHP" box="boxPHP" percent="percentPHP" />
                 <SkillCard source={laravel} alter="Laravel" title="Laravel" percentage={85} mainTitle="Laravel" box="boxLaravel" percent="percentLaravel" />
                 <SkillCard source={mysql} alter="MySQL" title="MySQL" percentage={90} mainTitle="MySQL" box="boxMySQL" percent="percentMySQL" />
                 <SkillCard source={mongodb} alter="MongoDB" title="MongoDB" percentage={60} mainTitle="MongoDB" box="boxMongoDB" percent="percentMongoDB" />
                 <SkillCard source={git} alter="Git" title="Git" percentage={75} mainTitle="Git" box="boxGit" percent="percentGit" />
-                <SkillCard source={photoshop} alter="Photoshop" title="Photoshop" percentage={70} mainTitle="Photoshop" box="boxPhotoshop" percent="percentPhotoshop" />
+                {/* <SkillCard source={photoshop} alter="Photoshop" title="Photoshop" percentage={70} mainTitle="Photoshop" box="boxPhotoshop" percent="percentPhotoshop" />
                 <SkillCard source={illustrator} alter="Illustrator" title="Illustrator" percentage={55} mainTitle="Illustrator" box="boxIllustrator" percent="percentIllustrator" />
                 <SkillCard source={adobe_xd} alter="Adobe_XD" title="Adobe XD" percentage={75} mainTitle="Adobe XD" box="boxAdobe_XD" percent="percentAdobe_XD" />
-                <SkillCard source={figma} alter="Figma" title="Figma" percentage={80} mainTitle="Figma" box="boxFigma" percent="percentFigma" />
+                <SkillCard source={figma} alter="Figma" title="Figma" percentage={80} mainTitle="Figma" box="boxFigma" percent="percentFigma" /> */}
             </div>
         </div>
     )

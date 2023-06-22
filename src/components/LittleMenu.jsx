@@ -15,7 +15,7 @@ function LittleMenu({ handleLanguageToggle, language, open, setOpen, closeOrOpen
             </li>
 
             <li>
-                <a target="_blank" title={language == "french" ? "CV en PDF" : "PDF Resume"} className="font-semibold cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-md" rel="noreferrer" href={language == 'french' ? 'https://drive.google.com/file/d/10UKYIhQjIYR0AfQD9e9iX9x1ZeV4iTbX/view?usp=sharing' : 'https://drive.google.com/file/d/1ah7zzntrHMYSLVkWfm3irvO9-TEQVnik/view?usp=sharing'}>{language == "french" ? "Curriculum Vitae" : "Check My Resume"}</a>
+                <a target="_blank" title={language == "french" ? "CV en PDF" : "PDF Resume"} className="font-semibold cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white rounded-md" rel="noreferrer" href={language == 'french' ? 'https://drive.google.com/file/d/1Tohw4U2A6PSur1vUjL557pwUyKn46VIT/view?usp=sharing' : 'https://drive.google.com/file/d/1owI04odM_GmNEiAUNyN8Pjqn-Hiqm4TV/view?usp=sharing'}>{language == "french" ? "Curriculum Vitae" : "Check My Resume"}</a>
             </li>
 
         </ul>

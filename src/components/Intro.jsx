@@ -4,7 +4,6 @@ import { BsWhatsapp } from 'react-icons/bs'
 import React from 'react';
 
 export default React.forwardRef(function Intro({ language }, ref) {
-
     return (
         <div ref={ref} className="text-center py-10 px-6 pt-0">
             <div className="pic flex justify-center mx-auto mb-4 relative bg-gradient-to-b from-slate-200 rounded-full overflow-hidden">
@@ -16,31 +15,31 @@ export default React.forwardRef(function Intro({ language }, ref) {
 
             {/* get in touch */}
             <div className="text-4xl flex flex-row flex-wrap justify-center">
-                <ul className="flex items-center gap-2 mb-8">
+                <ul className="flex items-center gap-6 mb-8">
                     <li className="">
                         <a target="_blank" rel="noreferrer" href="https://twitter.com/MehdiNip" className=" text-gray-500 hover:text-cyan-500" title="Twitter"><AiIcons.AiFillTwitterCircle /></a>
                     </li>
                     <li className="">
                         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/mahdi-nadir-36b39210a/" className=" text-gray-500 hover:text-cyan-900" title="LinkedIn"><AiIcons.AiFillLinkedin /></a>
                     </li>
-                    <li className="">
+                    {/* <li className="">
                         <a target="_blank" rel="noreferrer" href="https://www.facebook.com/medyzeus" className=" text-gray-500 hover:text-blue-600" title="Facebook"><AiIcons.AiFillFacebook /></a>
-                    </li>
+                    </li> */}
                     <li className="">
                         <a target="_blank" rel="noreferrer" href="https://github.com/mahdi-nadir" className=" text-gray-500 hover:text-black" title="Github"><AiIcons.AiFillGithub /></a>
                     </li>
-                    <li className="">
+                    {/* <li className="">
                         <a target="_blank" rel="noreferrer" href="mailto:mehdinip@gmail.com" className=" text-gray-500 hover:text-red-300" title="Gmail"><AiIcons.AiFillGoogleCircle /></a>
-                    </li>
-                    <li className="">
+                    </li> */}
+                    {/* <li className="">
                         <a target="_blank" rel="noreferrer" href="mailto:mahdi_a_nadir@yahoo.com" className=" text-gray-500 hover:text-violet-800" title="Yahoo"><AiIcons.AiFillYahoo /></a>
-                    </li>
-                    <li className="">
+                    </li> */}
+                    {/* <li className="">
                         <a href="tel:0015142471952" className=" text-gray-500 hover:text-black" title={language === "french" ? "Téléphone" : "Phone"}><AiIcons.AiFillPhone /></a>
-                    </li>
-                    <li className="">
+                    </li> */}
+                    {/* <li className="">
                         <a href="https://wa.me/0015142471952" className=" text-gray-500 hover:text-green-500" title="WhatsApp"><BsWhatsapp /></a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </div>

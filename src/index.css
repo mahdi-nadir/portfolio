@@ -281,6 +281,16 @@
     animation: zoom .3s ease-in-out;
 }
 
+.imgFlag {
+    width: 35px;
+    height: 20px;
+    transition: transform .1s ease-in-out;
+}
+
+.imgFlag:hover {
+    transform: scale(1.08);
+}
+
 @keyframes zoom {
     0% {
         transform: scale(0);
@@ -370,6 +380,14 @@
 
 .reco-card:hover {
     transform: scale(1.05);
+}
+
+.skillCard {
+    transition: transform .2s ease-in-out;
+}
+
+.skillCard:hover {
+    transform: scale(1.03);
 }
 
 .reco-card-inner {
