@@ -9,7 +9,19 @@ import { useState, useEffect, useRef } from 'react'
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const getTheme = () => {
+    const theme = JSON.parse(localStorage.getItem('theme'));
+    return theme || false;
+  }
+
+  const getLanguage = () => {
+    const language = JSON.parse(localStorage.getItem('language'));
+    return language || "english";
+  }
+
+  const [darkMode, setDarkMode] = useState(getTheme());
+  const [language, setLanguage] = useState(getLanguage())
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const [open, setOpen] = useState(false)
   // const goToAbout = useRef()
@@ -26,12 +38,12 @@ function App() {
   };
 
 
-  const [language, setLanguage] = useState("english")
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleLanguageChange = (newLanguage) => {
     setLanguage(newLanguage);
   };
+
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -45,7 +57,13 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem('theme', JSON.stringify(darkMode))
+  }, [darkMode]);
 
+  useEffect(() => {
+    localStorage.setItem('language', JSON.stringify(language))
+  }, [language]);
   // const scrollToAbout = () => {
   //   goToAbout.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
   // }

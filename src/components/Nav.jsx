@@ -21,7 +21,7 @@ export default function Nav({ language, onLanguageChange, showHamburger, open, d
         if (showHamburger) {
             if (open) {
                 return <div className='flex flex-row items-center justify-center rounded-md mr-3 mt-3 z-20'>
-                    <li className="flex flex-row items-center justify-center cursor-pointer mx-1 rounded-md list-none" onClick={() => toggleDM()} >
+                    <li className="flex flex-row items-center justify-center cursor-pointer rounded-md list-none" onClick={() => toggleDM()} >
                         {dark ? <BsSunFill className='text-2xl' /> : <BsFillMoonStarsFill className='text-2xl' />}
                     </li>
                     <li className="imgFlag flex flex-row items-center justify-center cursor-pointer mx-4 rounded-md list-none" onClick={handleLanguageToggle} title={language === 'french' ? "Switch to English" : "Passer au français"}>
