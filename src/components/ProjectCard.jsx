@@ -2,7 +2,7 @@ import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { RiAdminLine } from 'react-icons/ri'
 import { AiOutlineUser } from 'react-icons/ai'
 import { DiGithubAlt } from 'react-icons/di'
-import { CiTimer } from 'react-icons/ci'
+// import { CiTimer } from 'react-icons/ci'
 
 
 export default function ProjectCard({ language, title, linkVidAdmin, linkVidUser, description, technologies, soon, dark, codeGithub }) {
@@ -12,17 +12,17 @@ export default function ProjectCard({ language, title, linkVidAdmin, linkVidUser
             <div className="flex flex-col justify-between items-center text-center p-4" >
                 <div className="flex flex-row items-center justify-center">
                     <div className="flex flex-row justify-center items-center">
-                        {soon && linkVidAdmin ? <a className="pl-4 pr-2 md:text-3xl" href={linkVidAdmin} title={language === "french" ? "Panneau d'administration" : "Admin Panel"} target="_blank" rel="noopener noreferrer"><RiAdminLine className="hover:scale-110 hover:border-b-2" /></a> : ''}
-                        {!soon && <a className="comingSoon md:text-3xl" title={language === "french" ? "Bientôt disponible..." : "Coming Soon..."} href="#"><CiTimer className="hover:scale-110 hover:border-b-2" /></a>}
+                        {soon && linkVidAdmin ? <a className="text-3xl pl-4 pr-2 md:text-4xl" href={linkVidAdmin} title={language === "french" ? "Panneau d'administration" : "Admin Panel"} target="_blank" rel="noopener noreferrer"><RiAdminLine className="hover:scale-110 hover:border-b-2" /></a> : ''}
+                        {!soon && <a className="comingSoon text-blue-400 md:text-xl" href="#">{language === "french" ? "Bientôt disponible..." : "Coming Soon..."}{/* <CiTimer className="hover:scale-110 hover:border-b-2" /> */}</a>}
 
                     </div>
 
                     {soon && linkVidUser ? <div className="flex flex-row justify-center items-center">
-                        <a className="pl-4 pr-2 md:text-3xl" href={linkVidUser} target="_blank" title={language === "french" ? "Espace Utilisateur" : "User Panel"} rel="noopener noreferrer"><AiOutlineUser className="hover:scale-110 hover:border-b-2" /></a>
+                        <a className="text-3xl pl-4 pr-2 md:text-4xl" href={linkVidUser} target="_blank" title={language === "french" ? "Espace Utilisateur" : "User Panel"} rel="noopener noreferrer"><AiOutlineUser className="hover:scale-110 hover:border-b-2" /></a>
                     </div> : ''}
 
                     {codeGithub != '' ? <div className="flex flex-row justify-center items-center">
-                        <a className="pl-4 pr-2 md:text-3xl" href={codeGithub} target="_blank" title={language === "french" ? "Code GitHub" : "GitHub Code"} rel="noopener noreferrer"><DiGithubAlt className="hover:scale-110 hover:border-b-2" /></a>
+                        <a className="text-3xl pl-4 pr-2 md:text-4xl" href={codeGithub} target="_blank" title={language === "french" ? "Code GitHub" : "GitHub Code"} rel="noopener noreferrer"><DiGithubAlt className="hover:scale-110 hover:border-b-2" /></a>
                     </div> : ''}
                 </div>
                 <div className="description">
