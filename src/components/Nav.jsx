@@ -25,7 +25,7 @@ export default function Nav({ language, onLanguageChange, showHamburger, open, d
                         {dark ? <BsSunFill className='text-2xl' /> : <BsFillMoonStarsFill className='text-2xl' />}
                     </li>
                     <li className="imgFlag flex flex-row items-center justify-center cursor-pointer mx-4 rounded-md list-none" onClick={handleLanguageToggle} title={language === 'french' ? "Switch to English" : "Passer au français"}>
-                        {language == "french" ? <img src={usaFlag} alt='En' /> : <img src={franceFlag} alt='Fr' />}
+                        {language == "french" ? <span className='text-lg font-bold'>EN</span> : <span className='text-lg font-bold'>FR</span>}
                     </li>
                     <ImCross className='btn text-3xl cursor-pointer relative' onClick={() => closeOrOpen()} />
                     <LittleMenu className='mt-5' language={language} handleLanguageToggle={handleLanguageToggle} open={open} closeOrOpen={closeOrOpen} aboutClick={onAboutClick} skillsClick={onSkillsClick} projectsClick={onProjectsClick} recoClick={onRecoClick} /></div>
@@ -35,7 +35,7 @@ export default function Nav({ language, onLanguageChange, showHamburger, open, d
                         {dark ? <BsSunFill className='text-2xl' /> : <BsFillMoonStarsFill className='text-2xl' />}
                     </li>
                     <li className="imgFlag flex flex-row items-center justify-center cursor-pointer mx-4 rounded-md list-none" onClick={handleLanguageToggle} title={language === 'french' ? "Switch to English" : "Passer au français"}>
-                        {language == "french" ? <img src={usaFlag} alt='En' /> : <img src={franceFlag} alt='Fr' />}
+                        {language == "french" ? <span className='text-lg font-bold'>EN</span> : <span className='text-lg font-bold'>FR</span>}
                     </li>
                     <FaBars className='btn text-3xl cursor-pointer relative' onClick={() => closeOrOpen()} />
                 </div>

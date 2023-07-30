@@ -51,6 +51,17 @@ export default React.forwardRef(function Projects({ language, dark }, ref) {
                     description={language === "french" ? "Ce projet est un blog sur l'immigration au Canada. Il s'agit d'une ressource complète et conviviale pour les personnes recherchant des informations sur la résidence permanente, les permis de travail, les permis d'études ou les visas touristiques. Avec un compte personnel, les utilisateurs peuvent poser des questions, mettre des articles en favoris, lire des articles informatifs rédigés par les administrateurs, participer à des messages privés et profiter de nombreuses autres fonctionnalités." : "This project is a blog on immigration to Canada. It is a comprehensive and user-friendly resource for individuals seeking information on permanent residency, work permits, study permits, or tourist visas. With a personal account, users can ask questions, bookmark posts, read informative articles written by the administrators, engage in private messaging, and many more features."}
                     technologies={["Tailwind", "JavaScript", "React", "Laravel", "MySQL"]}
                 />
+
+                <ProjectCard
+                    dark={dark}
+                    language={language}
+                    title="MapleMind Tools"
+                    linkVidUser="https://maplemind.netlify.app/"
+                    codeGithub="https://github.com/mahdi-nadir/canadianImmigrationTools.git"
+                    soon={true}
+                    description={language === "french" ? "Cette application web (toujours en cours de développement) est conçue pour faciliter le processus d'immigration au Canada. Avec une gamme complète d'outils, les candidats peuvent calculer leur score d'admissibilité, le score de classement global, le score des compétences linguistiques et explorer les différents programmes d'immigration disponibles. Aussi, les utilisateurs peuvent obtenir des informations clés sur leurs chances de réussite dans leur projet d'immigration." : "This web application (still under development) is designed to streamline the immigration process to Canada. With a comprehensive range of tools, candidates can calculate their eligibility score, global ranking score, language proficiency score, and explore various available immigration programs. Additionally, users can gain key insights into their chances of success in their immigration project."}
+                    technologies={["Tailwind", "JavaScript"]}
+                />
             </div >
         </div>
     )

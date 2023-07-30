@@ -5,7 +5,7 @@ import { DiGithubAlt } from 'react-icons/di'
 // import { CiTimer } from 'react-icons/ci'
 
 
-export default function ProjectCard({ language, title, linkVidAdmin, linkVidUser, description, technologies, soon, dark, codeGithub }) {
+export default function ProjectCard({ language, title, linkVidAdmin, linkVidUser, description, technologies, soon, dark, codeGithub/* , inProgress */ }) {
     return (
         <div className={dark ? 'boxProjectContainer flex flex-col shadow-lg shadow-gray-600 rounded py-4 sm:w-1/2' : 'boxProjectContainer flex flex-col shadow-lg rounded py-4 sm:w-1/2'} style={{ maxWidth: '400px', maxHeight: '800px' }}>
             <h2 className={dark ? "textDark" : "text"}>{title}</h2>
@@ -14,7 +14,6 @@ export default function ProjectCard({ language, title, linkVidAdmin, linkVidUser
                     <div className="flex flex-row justify-center items-center">
                         {soon && linkVidAdmin ? <a className="text-3xl pl-4 pr-2 md:text-4xl" href={linkVidAdmin} title={language === "french" ? "Panneau d'administration" : "Admin Panel"} target="_blank" rel="noopener noreferrer"><RiAdminLine className="hover:scale-110 hover:border-b-2" /></a> : ''}
                         {!soon && <a className="comingSoon text-blue-400 md:text-xl" href="#">{language === "french" ? "Bientôt disponible..." : "Coming Soon..."}{/* <CiTimer className="hover:scale-110 hover:border-b-2" /> */}</a>}
-
                     </div>
 
                     {soon && linkVidUser ? <div className="flex flex-row justify-center items-center">
