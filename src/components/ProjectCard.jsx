@@ -7,7 +7,7 @@ import { DiGithubAlt } from 'react-icons/di'
 
 export default function ProjectCard({ language, title, linkVidAdmin, linkVidUser, description, technologies, soon, dark, codeGithub/* , inProgress */ }) {
     return (
-        <div className={dark ? 'boxProjectContainer flex flex-col shadow-lg shadow-gray-600 rounded py-4 sm:w-1/2' : 'boxProjectContainer flex flex-col shadow-lg rounded py-4 sm:w-1/2'} style={{ maxWidth: '400px', maxHeight: '800px' }}>
+        <div className={dark ? 'boxProjectContainer flex flex-col shadow-lg shadow-gray-600 rounded py-4 min-w-1/4 max-w-[500px]' : 'boxProjectContainer flex flex-col shadow-lg rounded py-4 min-w-1/4 max-w-[500px]'} style={{ maxWidth: '400px', maxHeight: '800px' }}>
             <h2 className={dark ? "textDark" : "text"}>{title}</h2>
             <div className="flex flex-col justify-between items-center text-center p-4" >
                 <div className="flex flex-row items-center justify-center">
