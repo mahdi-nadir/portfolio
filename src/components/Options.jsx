@@ -15,7 +15,7 @@ export default function Options({ language, handleLanguageToggle, aboutClick, sk
                 {language == "french" ? "Recommandations" : "Recommendations"}
             </li>
             <li className="btn">
-                <a target="_blank" title={language == "french" ? "CV en PDF" : "PDF Resume"} className="btn cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-6 font-semibold" rel="noreferrer" href={language == 'french' ? 'https://drive.google.com/file/d/1UODBbbAS7Mkq-p2-W6La_qYlGGY06rJ4/view?usp=drive_link' : 'https://drive.google.com/file/d/14prKniteZtMXmzWHv95IoXHPafuhuA2K/view?usp=drive_link'}>{language == "french" ? "CV" : "Resumé"}</a>
+                <a target="_blank" title={language == "french" ? "CV en PDF" : "PDF Resume"} className="btn cursor-pointer bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-6 font-semibold" rel="noreferrer" href={language == 'french' ? 'https://drive.google.com/file/d/1T4hiK4GtGDWet5hFgihH0TLIvnCDwxhA/view?usp=sharing' : 'https://drive.google.com/file/d/1Sz8zb2B3Sb9MD5RHHqu0-9yHT_MZE-lL/view?usp=sharing'}>{language == "french" ? "CV" : "Resumé"}</a>
             </li>
             <li className="font-semibold cursor-pointer ml-6 py-2 rounded-md" onClick={handleLanguageToggle} title={language === 'french' ? "Switch to English" : "Passer au français"}>
                 {language == "french" ? <span className='text-lg font-bold'>En</span> : <span className='text-lg font-bold'>Fr</span>}
