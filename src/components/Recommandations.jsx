@@ -8,10 +8,10 @@ import { motion } from 'framer-motion';
 
 export default React.forwardRef(function Recommandations({ language, dark }, ref) {
     const fadeInVariants = {
-        initial: { opacity: 0, y: 100 },
+        initial: { opacity: 0, x: -300 },
         animate: (index) => ({
             opacity: 1,
-            y: 0,
+            x: 0,
             transition: {
                 delay: index * 0.15
             }

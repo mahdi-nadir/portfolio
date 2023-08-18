@@ -288,7 +288,7 @@
 ########################## NAV ############################
 */
 .logo {
-    transition: transform .1s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .logo:hover {
@@ -299,8 +299,12 @@
     animation: zoom .3s ease-in-out;
 }
 
+.btn {
+    transition: transform .3s ease-in-out;
+}
+
 .btn:hover {
-    text-decoration: underline;
+    transform: scale(1.05);
 }
 
 .imgFlag {

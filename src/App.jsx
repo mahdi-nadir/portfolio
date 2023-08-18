@@ -5,6 +5,9 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 import ButtonTop from './components/ButtonTop'
 import Recommandations from './components/Recommandations'
+import Email from './components/Email'
+// import .env
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from '/env'
 import { useState, useEffect, useRef } from 'react'
 
 
@@ -88,6 +91,7 @@ function App() {
         <Skills ref={goToSkills} language={language} dark={darkMode} />
         <Projects ref={goToProjects} language={language} dark={darkMode} />
         <Recommandations ref={goToReco} language={language} dark={darkMode} />
+        <Email language={language} dark={darkMode} SERVICE_ID={SERVICE_ID} TEMPLATE_ID={TEMPLATE_ID} USER_ID={USER_ID} />
         <ButtonTop />
       </div>
       <Footer language={language} />
