@@ -15,8 +15,8 @@ export default React.forwardRef(function Email({ language, dark, SERVICE_ID, TEM
     }
 
     const fadeInVariants = {
-        initial: { opacity: 0, x: 200 },
-        animate: { opacity: 1, x: 0, transition: { duration: 1 } }
+        initial: { opacity: 0, y: 200 },
+        animate: { opacity: 1, y: 0, transition: { duration: .7 } }
     };
 
     const sendEmail = (e) => {

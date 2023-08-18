@@ -31,6 +31,7 @@ function App() {
   const goToSkills = useRef()
   const goToProjects = useRef()
   const goToReco = useRef()
+  const goToContact = useRef()
 
   const closeOrOpen = () => {
     setOpen(!open)
@@ -83,15 +84,19 @@ function App() {
     goToReco.current.scrollIntoView({ behavior: 'smooth' })
   }
 
+  const scrollToContact = () => {
+    goToContact.current.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <div className={darkMode ? 'dark-mode' : ''}>
       <div className='px-6'>
-        <Nav language={language} onLanguageChange={handleLanguageChange} showHamburger={windowWidth < 960} open={open} closeOrOpen={closeOrOpen} /* onAboutClick={scrollToAbout} */ onSkillsClick={scrollToSkills} onProjectsClick={scrollToProjects} onRecoClick={scrollToReco} toggleDM={toggleDarkMode} dark={darkMode} />
+        <Nav language={language} onLanguageChange={handleLanguageChange} showHamburger={windowWidth < 960} open={open} closeOrOpen={closeOrOpen} /* onAboutClick={scrollToAbout} */ onSkillsClick={scrollToSkills} onProjectsClick={scrollToProjects} onRecoClick={scrollToReco} onContactClick={scrollToContact} toggleDM={toggleDarkMode} dark={darkMode} />
         <Intro /* ref={goToAbout} */ language={language} dark={darkMode} />
         <Skills ref={goToSkills} language={language} dark={darkMode} />
         <Projects ref={goToProjects} language={language} dark={darkMode} />
         <Recommandations ref={goToReco} language={language} dark={darkMode} />
-        <Email language={language} dark={darkMode} SERVICE_ID={SERVICE_ID} TEMPLATE_ID={TEMPLATE_ID} USER_ID={USER_ID} />
+        <Email language={language} dark={darkMode} SERVICE_ID={SERVICE_ID} TEMPLATE_ID={TEMPLATE_ID} USER_ID={USER_ID} ref={goToContact} />
         <ButtonTop />
       </div>
       <Footer language={language} />

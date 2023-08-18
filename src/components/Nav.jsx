@@ -10,7 +10,7 @@ import Options from './Options'
 import LittleMenu from './LittleMenu'
 
 
-export default function Nav({ language, onLanguageChange, showHamburger, open, dark, closeOrOpen, onAboutClick, onSkillsClick, onProjectsClick, onRecoClick, toggleDM }) {
+export default function Nav({ language, onLanguageChange, showHamburger, open, dark, closeOrOpen, onAboutClick, onSkillsClick, onProjectsClick, onRecoClick, onContactClick, toggleDM }) {
 
     const handleLanguageToggle = () => {
         const newLanguage = language === 'english' ? 'french' : 'english';
@@ -28,7 +28,7 @@ export default function Nav({ language, onLanguageChange, showHamburger, open, d
                         {language == "french" ? <span className='text-lg font-bold'>EN</span> : <span className='text-lg font-bold'>FR</span>}
                     </li>
                     <ImCross className='btn text-3xl cursor-pointer relative' onClick={() => closeOrOpen()} />
-                    <LittleMenu className='mt-5' language={language} handleLanguageToggle={handleLanguageToggle} open={open} closeOrOpen={closeOrOpen} aboutClick={onAboutClick} skillsClick={onSkillsClick} projectsClick={onProjectsClick} recoClick={onRecoClick} /></div>
+                    <LittleMenu className='mt-5' language={language} handleLanguageToggle={handleLanguageToggle} open={open} closeOrOpen={closeOrOpen} aboutClick={onAboutClick} skillsClick={onSkillsClick} projectsClick={onProjectsClick} recoClick={onRecoClick} contactClick={onContactClick} /></div>
             } else {
                 return <div className='flex flex-row items-center justify-center rounded-md mr-3 mt-3'>
                     <li className="flex flex-row items-center justify-center cursor-pointer rounded-md list-none" onClick={() => toggleDM()} >
@@ -41,7 +41,7 @@ export default function Nav({ language, onLanguageChange, showHamburger, open, d
                 </div>
             }
         } else {
-            return <Options language={language} handleLanguageToggle={handleLanguageToggle} aboutClick={onAboutClick} skillsClick={onSkillsClick} projectsClick={onProjectsClick} recoClick={onRecoClick} toggleDarkMode={toggleDM} dark={dark} />
+            return <Options language={language} handleLanguageToggle={handleLanguageToggle} aboutClick={onAboutClick} skillsClick={onSkillsClick} projectsClick={onProjectsClick} recoClick={onRecoClick} contactClick={onContactClick} toggleDarkMode={toggleDM} dark={dark} />
         }
     }
     return (
